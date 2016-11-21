@@ -1,0 +1,25 @@
+﻿<UserControl
+    x:Name="post"
+    x:Class="UserControlsPrueba.UserControls.Post"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UserControlsPrueba.UserControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="400"
+    d:DesignWidth="400">
+
+    <StackPanel>
+        <StackPanel Name="panelUsuario" Orientation="Horizontal" RelativePanel.AlignTopWithPanel="True">
+            <Image Height="20" Width="20" Margin="12" Source="{Binding ElementName=post, Path=imagenUsuario}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="{Binding ElementName=post, Path=nombreUsuario}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </StackPanel>
+        <Image Name="foto" Source="{Binding ElementName=post,Path=fotoPost}" MaxHeight="240" MaxWidth="280" HorizontalAlignment="Center" Stretch="Uniform" RelativePanel.Below="panelUsuario"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <AppBarButton Icon="Comment"/>
+            <AppBarButton Icon="OutlineStar"/>
+            <AppBarButton Icon="ReShare"/>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

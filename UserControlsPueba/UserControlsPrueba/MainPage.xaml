@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="UserControlsPrueba.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UserControlsPrueba"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:UserControlsPrueba.UserControls"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Horizontal" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <controls:fichaAlumno nombreAlumno="David" edadAlumno="20" imagenAlumno="https://s-media-cache-ak0.pinimg.com/originals/31/66/3a/31663af2f6ad88576464d4b5277823e6.png"/>
+        <controls:fichaAlumno nombreAlumno="Anon" edadAlumno="0"/>
+        <controls:Post fotoPost="http://41.media.tumblr.com/d513a10520b5f62314215fbf07be73bf/tumblr_nuqdglN1G01s5hu3eo1_1280.png" nombreUsuario="PAPYRUS" imagenUsuario="https://s-media-cache-ak0.pinimg.com/originals/31/66/3a/31663af2f6ad88576464d4b5277823e6.png"/>
+        <controls:Post imagenUsuario="http://66.media.tumblr.com/57da51affc82e3fbdfefd93b67a15e26/tumblr_inline_nvds52i6xE1qgpy5p_500.jpg" nombreUsuario="sans" fotoPost="http://img14.deviantart.net/2e18/i/2015/358/c/c/sans_by_tsaoshin-d9lah3n.png"/>
+    </StackPanel>
+</Page>
